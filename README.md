@@ -18,11 +18,11 @@ Example: json<br>
 You can also set the <code>manpacker</code> field in the <code>package.json</code> file.<br>
 Example:<br>
 ```
-{"manpacker": {"root": "src"}}
+{"manpacker": {"root": "app"}}
 ```
 Final input result, Merge <code>.manpackeric</code> config item.
 ```
-{"root": "src", "output": "bin"}
+{"root": "app", "output": "bin"}
 ```
 You can customize the project initialization file name.<br>
 Example:<br>
@@ -101,7 +101,7 @@ Configuration item description:<br>
 
 |name|type|value|description|
 |----|----|-----|-----------|
-|root|string|default: src| Source directory for building the project|
+|root|string|default: app| Source directory for building the project|
 |output|string|default: view|Directory output after build|
 |define|object|dedalut: {NODE_ENV: process.env.NODE_ENV}|Define constants in a project, <code>eslintrc</code> set global key-value|
 |isEslint|boolean|default: true|Start the eslint-loader feature by default|
