@@ -1,0 +1,10 @@
+.DS_Store
+.manpackeric
+.vscode
+.travis.yml
+.editorconfig
+test
+node_modules
+service
+package-lock.json
+template.html

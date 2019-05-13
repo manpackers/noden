@@ -1,0 +1,68 @@
+{
+  "name": "@manpacker/noden",
+  "version": "0.0.0",
+  "description": "Node project generator build project",
+  "main": "./lib",
+  "bin": {
+    "manpacker-noden": "./bin/manpacker-noden"
+  },
+  "scripts": {
+    "test:server": "node ./bin/manpacker server --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
+    "test:build": "node ./bin/manpacker build --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
+    "test:nodemon": "nodemon --watch ./test/app/index.js ./test/app/inde.js 9090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manpackers/noden.git"
+  },
+  "keywords": [
+    "noden",
+    "webpack",
+    "manpacker",
+    "generator",
+    "build",
+    "node"
+  ],
+  "author": {
+    "name": "winterfete"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manpackers/noden/issues"
+  },
+  "homepage": "https://github.com/manpackers/noden#readme",
+  "eslintConfig": {
+    "extends": [
+      "manpacker-typescript"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "manpacker"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-manpacker": "^1.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-manpacker-typescript": "^1.2.0",
+    "koa": "^2.7.0",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.5",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "ora": "^3.4.0",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^6.0.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.0.0"
+  }
+}
