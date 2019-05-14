@@ -8,7 +8,7 @@
     "type": "node",
     "request": "launch",
     "name": "manpacker:test-build",
-    "program": "${workspaceRoot}/bin/manpacker",
+    "program": "${workspaceRoot}/bin/manpacker-noden",
     "restart": true,
     "args": [
       "build",
@@ -20,7 +20,7 @@
     "type": "node",
     "request": "launch",
     "name": "manpacker:test-server",
-    "program": "${workspaceRoot}/bin/manpacker",
+    "program": "${workspaceRoot}/bin/manpacker-noden",
     "restart": true,
     "args": [
       "server",
@@ -36,9 +36,7 @@
     "args": [
       "--experimental-modules",
       "--inspect",
-      "./test/app/index.mjs",
-      "--ic", "./test/config/manpacker.ic.js",
-      "--config", "./test/manpacker.config.js"
+      "./test/app/index.mjs"
     ],
     "cwd": "${workspaceRoot}"
   }]

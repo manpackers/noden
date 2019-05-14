@@ -7,8 +7,8 @@
     "manpacker-noden": "./bin/manpacker-noden"
   },
   "scripts": {
-    "test:server": "node ./bin/manpacker server --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
-    "test:build": "node ./bin/manpacker build --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
+    "test:server": "node ./bin/manpacker-noden server --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
+    "test:build": "node ./bin/manpacker-noden build --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
     "test:nodemon": "nodemon --watch ./test/app/index.js ./test/app/inde.js 9090"
   },
   "repository": {
