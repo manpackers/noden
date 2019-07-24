@@ -105,11 +105,12 @@ Configuration item description:<br>
 |output|string|default: view|Directory output after build|
 |define|object|dedalut: {NODE_ENV: process.env.NODE_ENV}|Define constants in a project, <code>eslintrc</code> set global key-value|
 |isEslint|boolean|default: true|Start the eslint-loader feature by default|
+|isExternalsDependencies|boolean|default: false|Build package dependency package|
 
 ## manpacker.noden.js
 Default root file name: <code>manpacker.noden.js</code>
 ```
-module.exports = ic = {
+module.exports = ic => {
   // webpack config item.
   return {}
 }
