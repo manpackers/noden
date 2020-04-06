@@ -43,21 +43,21 @@
   },
   "devDependencies": {
     "babel-preset-manpacker": "^1.1.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.8.0",
     "eslint-config-manpacker-typescript": "^1.2.0",
     "koa": "^2.7.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.1.0",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.2",
+    "eslint-loader": "^4.0.0",
     "ora": "^3.4.0",
     "rimraf": "^2.6.3",
-    "ts-loader": "^6.0.0",
-    "typescript": "^3.4.5",
+    "ts-loader": "^6.2.2",
     "webpack": "^4.30.0",
     "webpack-merge": "^4.2.1"
   },
